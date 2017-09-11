@@ -186,6 +186,7 @@ IF EXIST .\MISSING\DOSMGR.DEL GOTO HALFCOMPLETE
 CLS
 ECHO ERROR: There are missing files from your Windows 95 installation. Setup cannot continue. See directory 'MISSING' for files missing from the installation. Files with extension '.DEL' means the file is missing from the installation.
 ECHO.
+DEL OUTPUT\WINDOWS.zip
 ECHO * PIFCOMM.DEL  =     COMMAND.PIF
 ECHO * EXITTO~1.DEL = Exit to DOS.PIF
 ECHO * WININI.DEL   =         WIN.INI
