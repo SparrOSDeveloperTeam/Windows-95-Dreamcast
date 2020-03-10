@@ -1,6 +1,6 @@
 @echo off
 cls
-ECHO Welcome to the Windows 95 Zip loader. This will create a >=5mb zip file later used on the Dreamcast.
+ECHO Welcome to the Windows 95 Slimmer Script! This will slim Windows 95 down to about 5~10MiB.
 ECHO.
 ECHO Warnings - These can be skipped. These mean that something may be missing but is unimportant (such as a PIF file)
 ECHO.
@@ -17,7 +17,7 @@ DEL OUTPUT\MAKEFILE
 DELTREE OUTPUT\.
 DEL MISSING\*.DEL
 ECHO.
-ECHO Making Directories [2/4]
+ECHO Making Directories [2/3]
 ECHO.
 IF NOT EXIST .\MISSING MKDIR MISSING
 MKDIR OUTPUT\WINDOWS
@@ -36,7 +36,7 @@ MKDIR OUTPUT\WINDOWS\SYSTEM\IOSBUSYS
 MKDIR OUTPUT\WINDOWS\SYSTEM\VMM32
 MKDIR OUTPUT\WINDOWS\TEMP
 ECHO.
-ECHO Copying Files [3/4]
+ECHO Copying Files [3/3]
 ECHO.
 COPY FILESHERE\BOOTLOG.PRV OUTPUT
 IF NOT EXIST OUTPUT\BOOTLOG.PRV COPY NUL MISSING\BOOTLOG.DEL
@@ -172,8 +172,7 @@ COPY FILESHERE\WINDOWS\WIN386.SWP OUTPUT\WINDOWS
 IF NOT EXIST OUTPUT\WINDOWS\WIN386.SWP COPY NUL MISSING\WIN386.DEL
 ECHO.
 ECHO Creating Archive [4/4]
-ECHO.
-ECHO Function not yet available!
+ECHO.-
 ECHO.
 ECHO Setup has finished preparing files
 ECHO.
@@ -202,5 +201,4 @@ ECHO Setup has completed installation. Press any key to copy the zip.
 GOTO END
 :END
 PAUSE >nul
-COPY OUTPUT\WINDOWS.zip CDIMAGE\.
 EXIT
