@@ -1,6 +1,10 @@
+Discord Server: https://top.gg/servers/565734065702174720
+
 # Windows-95-Dreamcast
 
 Windows 95 on the Dreamcast!? No way!
+
+I retrieved the Fake86 bins from here: http://rubbermallet.org/fake86-0.13.3.15-dreamcast.rar
 
 ## How to build
 
